@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <div class="theme-toggle">
+            <span>Light Mode</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="counter-game">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to change the counter value. Try to get exactly 10!</p>
+            <div class="counter-value" id="counter">0</div>
+            <div class="game-buttons">
+                <button id="increment">Increment (+1)</button>
+                <button id="decrement">Decrement (-1)</button>
+                <button id="reset">Reset</button>
+            </div>
+            <p id="game-message"></p>
+        </section>
+
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Ay, SLim, where you at tho?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Mans in Bellingham still.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What you saying you laiveee?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Huh, bro I'm active.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Just got to the B with the valettttt,</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Just got to the B yeah I'm active.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with uppercase, lowercase, and number</div>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="success-message" id="success-message">
+                Form submitted successfully!
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
